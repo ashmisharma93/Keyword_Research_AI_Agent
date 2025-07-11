@@ -82,5 +82,5 @@ python scripts/main.py
 - Here is the result of keyword research pipeline:
 🔗 [View Full Google Sheet](https://docs.google.com/spreadsheets/d/1yJ0fqczTXR24Ljo5WG6pTA8Ew04OoZb3Wm76vLaaLkA/edit?gid=0#gid=0)
 - Preview of email output
-[Email Output](n8n_email_output.png)
+![n8n Email Output](n8n/screenshots/n8n_email_output.png)
 
