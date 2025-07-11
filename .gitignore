@@ -31,6 +31,6 @@ Thumbs.db
 # upload_keywords_to_sheets.n8n.json 
 
 # 📄 Optional: ignore all PDFs unless required
-*.pdf
+# *.pdf
 
 PythonClient/
