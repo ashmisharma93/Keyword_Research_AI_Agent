@@ -1,0 +1,36 @@
+#  Environment and Secret Files
+.env
+.env.*
+secrets/
+*.env
+
+#  Python Cache
+__pycache__/
+*.pyc
+
+#  Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+#  Virtual Environments
+venv/
+.venv/
+
+# IDE and Editor Settings
+.idea/
+.vscode/
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Personal or sensitive documents
+[Callus Company Inc.] AI Agent Developer.docx
+*.docx
+
+# n8n workflow export (keep if needed, ignore if sensitive)
+# upload_keywords_to_sheets.n8n.json 
+
+# 📄 Optional: ignore all PDFs unless required
+*.pdf
+
+PythonClient/

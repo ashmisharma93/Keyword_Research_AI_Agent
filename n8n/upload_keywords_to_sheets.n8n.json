@@ -1,0 +1,77 @@
+{
+  "nodes": [
+    {
+      "parameters": {
+        "filePath": "D:/AI agent developer/data/processed/clustered_keywords.csv"
+      },
+      "id": "1",
+      "name": "Read CSV File",
+      "type": "n8n-nodes-base.readBinaryFile",
+      "typeVersion": 1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "binaryPropertyName": "data",
+        "options": {
+          "headerRow": true
+        },
+        "formats": [
+          "csv"
+        ]
+      },
+      "id": "2",
+      "name": "Parse CSV",
+      "type": "n8n-nodes-base.spreadsheetFile",
+      "typeVersion": 1,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "sheetId": "https://docs.google.com/spreadsheets/d/1yJ0fqczTXR24Ljo5WG6pTA8Ew04OoZb3Wm76vLaaLkA/edit?gid=0#gid=0",
+        "sheetName": "Keyword_Clusters",
+        "range": "A1"
+      },
+      "id": "3",
+      "name": "Google Sheets",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 1,
+      "position": [650, 300],
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "My Google Sheets",
+          "name": "My Google Sheets"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Read CSV File": {
+      "main": [
+        [
+          {
+            "node": "Parse CSV",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse CSV": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {},
+  "name": "Upload Keyword Clusters to Google Sheet",
+  "id": "upload-keyword-cluster-flow"
+}
