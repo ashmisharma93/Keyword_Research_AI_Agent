@@ -7,5 +7,5 @@ def save_df(df, path):
     print(f"✅ Saved to {path}")
 
 def print_top(df, n=10):
-    print("\n🔝 Top", n, "keywords:")
+    print("\n Top", n, "keywords:")
     print(df.head(n))
