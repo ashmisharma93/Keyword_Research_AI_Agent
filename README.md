@@ -52,8 +52,8 @@ Keyword_Research_AI_Agent/
 ```
 
 # Tools Used
-Python            - keyword extraction,scoring,clustering
-Gemini API        - Long tail-keyword generation
-Google Sheets API - Upload final results
-n8n               - Workflow automation(daily run + email)
-Gmail SMTP        - Daily keyword summary email
+- Python            : keyword extraction,scoring,clustering
+- Gemini API        : Long tail-keyword generation
+- Google Sheets API : Upload final results
+- n8n               : Workflow automation(daily run + email)
+- Gmail SMTP        : Daily keyword summary email
