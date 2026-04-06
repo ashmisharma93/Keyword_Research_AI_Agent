@@ -27,8 +27,8 @@ Thumbs.db
 [Callus Company Inc.] AI Agent Developer.docx
 *.docx
 
-# n8n workflow export (keep if needed, ignore if sensitive)
-# upload_keywords_to_sheets.n8n.json 
+# Temporary/Testing Scripts (don't commit)
+check_gemini_models.py
 
 # 📄 Optional: ignore all PDFs unless required
 #*.pdf
