@@ -27,7 +27,7 @@ df_suggest = pd.concat([google,bing,youtube]).drop_duplicates()
 my_utils.save_df(df_suggest, "data/raw/all_keywords_suggestion.csv")
 
 # Gemini Enrichment
-gemini_keywords = enrich_keywords_with_gemini(seed, n=50)
+gemini_keywords = enrich_keywords_with_gemini(seed, n=10)
 df_gemini = to_df(gemini_keywords, "gemini")
 my_utils.save_df(df_gemini, "data/enriched/enriched_gemini_keywords.csv")
 
